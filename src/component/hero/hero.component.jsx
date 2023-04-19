@@ -3,9 +3,9 @@ import { ReactComponent as HeroImg } from '../../images/illustration-hero.svg';
 
 const Hero = () => {
   return (
-    <section className='overflow-hidden relative'>
-      <div className='grid grid-cols-2 gap-[2.2rem] pt-[5.53rem] '>
-        <div className='pt-[7.874rem] text-veryDarkBlue pl-[16.52rem]'>
+    <section className=''>
+      <div className='grid grid-cols-2  gap-[2.2rem] pt-[5.53rem] '>
+        <div className='pt-[7.874rem] text-veryDarkBlue max-w-[54.4rem] ml-auto'>
           <h1 className='text-[4.7rem] font-semibold leading-[5.2rem]'>
             A Simple Bookmark Manager
           </h1>
