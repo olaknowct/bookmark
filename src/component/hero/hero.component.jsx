@@ -4,8 +4,8 @@ import { ReactComponent as HeroImg } from '../../images/illustration-hero.svg';
 const Hero = () => {
   return (
     <section className='overflow-hidden relative'>
-      <div className='grid grid-cols-[minmax(0,54.4rem)_minmax(0,65.7rem)] gap-[2.2rem] pt-[5.53rem] max-w-[122.3rem] mx-auto  '>
-        <div className='pt-[7.874rem] pl-[5.7rem] text-veryDarkBlue'>
+      <div className='grid grid-cols-2 gap-[2.2rem] pt-[5.53rem] '>
+        <div className='pt-[7.874rem] text-veryDarkBlue pl-[16.52rem]'>
           <h1 className='text-[4.7rem] font-semibold leading-[5.2rem]'>
             A Simple Bookmark Manager
           </h1>
@@ -20,9 +20,9 @@ const Hero = () => {
             Get it on firefox
           </button>
         </div>
-        <div className="after:content-['']  pl-[5.7rem]  after:bg-softBlue after:h-[35.2rem] after:rounded-full after:w-[1000rem] after:block after:absolute after:top-[20rem] after:left-[92.5rem] after:-z-10">
+        <div className="after:content-[''] after:bg-softBlue after:h-[35.2rem] after:rounded-full after:w-[1000rem] after:block after:absolute after:top-[20rem] after:left-[92.5rem] after:-z-10">
           {/* <HeroImg /> */}
-          <img src={heroImg} width={700} height={466} />
+          <img src={heroImg} width={657} height={466} />
         </div>
       </div>
     </section>
