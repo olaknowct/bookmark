@@ -1,4 +1,5 @@
 import { ReactComponent as BookmarkLogo } from '../../images/logo-bookmark.svg';
+import { ReactComponent as Burger } from '../../images/icon-hamburger.svg';
 
 const Header = () => {
   return (
@@ -6,8 +7,8 @@ const Header = () => {
       <a href='#bookmark' className='pl-[7px]'>
         <BookmarkLogo />
       </a>
-      <nav className=''>
-        <ul className='flex flex-row gap-[4.8rem] text-[1.3rem] text-veryDarkBlue uppercase items-center tracking-[0.15rem]'>
+      <nav className='hidden md:block'>
+        <ul className='flex  flex-row flex-row gap-[4.8rem] text-[1.3rem] text-veryDarkBlue uppercase items-center tracking-[0.15rem]'>
           <li className='-mr-[0.5rem]'>Features</li>
           <li>Pricing</li>
           <li>Contact</li>
@@ -18,6 +19,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <Burger className='block md:hidden ' />
     </header>
   );
 };
