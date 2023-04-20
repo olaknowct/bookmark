@@ -21,7 +21,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="after:content-[''] justify-self-center order-1 lg:order-2 after:bg-softBlue after:h-[35.2rem] after:rounded-full after:w-[1000rem] after:block after:absolute lg:after:top-[20rem] after:top-[15rem] after:left-[20rem] lg:after:left-[92.5rem] after:-z-10">
+        <div className="after:content-['']  justify-self-center lg:justify-self-start order-1 lg:order-2 after:bg-softBlue after:h-[35.2rem] after:rounded-full after:w-[1000rem] after:block after:absolute lg:after:top-[20rem] after:top-[15rem] after:left-[20rem] lg:after:left-[92.5rem] after:-z-10">
           <img src={heroImg} width={657} height={466} />
         </div>
       </div>
