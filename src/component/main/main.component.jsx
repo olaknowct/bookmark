@@ -1,5 +1,5 @@
 import { FeatureProvider } from '../../context/features.context';
-import Extension from '../extension/extension.component';
+import Extensions from '../extensions/extensions.component';
 import Features from '../features/features.component';
 import Hero from '../hero/hero.component';
 
@@ -10,7 +10,7 @@ const Main = () => {
       <FeatureProvider>
         <Features />
       </FeatureProvider>
-      <Extension />
+      <Extensions />
     </main>
   );
 };
