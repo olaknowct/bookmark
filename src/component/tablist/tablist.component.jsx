@@ -24,7 +24,7 @@ const Tablist = () => {
               aria-controls='panel-1'
               id='tab-1'
               tabIndex={selectedIndexFeature === index ? '1' : '0'}
-              className={`tracking-[0.06rem] text-center border-b-[1px] pt-[2.2rem] pb-[3rem]  border-b-veryDarkBlue ${
+              className={`border-b-[1px] border-b-veryDarkBlue pb-[3rem] pt-[2.2rem] text-center  tracking-[0.06rem] ${
                 index === features.length - 1 ? 'px-[7.5rem]' : 'px-[4.5rem]'
               } `}
             >
