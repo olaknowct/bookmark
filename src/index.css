@@ -8,7 +8,7 @@
   }
 
   h2 {
-    @apply text-[3.4rem] font-semibold  tracking-[-0.09rem] text-veryDarkBlue;
+    @apply text-[3.3rem] font-semibold  tracking-[-0.09rem] text-veryDarkBlue;
   }
 }
 
@@ -32,4 +32,8 @@
 
 .right-elipse {
   @apply after:right-[63rem] after:top-[8.2rem];
+}
+
+.section-p-default {
+  @apply mx-auto max-w-[54rem] text-[1.8rem]  opacity-50;
 }

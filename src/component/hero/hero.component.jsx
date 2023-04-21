@@ -13,7 +13,7 @@ const Hero = () => {
           <div className='mt-[3.3rem] flex flex-col justify-center gap-[2rem] xs:flex-row lg:justify-start '>
             <button className='btn-primary'>Get it on Chrome</button>
             <button className='font-inherit rounded-lg  bg-grayishBlue  bg-opacity-10 px-[2rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold text-veryDarkBlue text-opacity-70 shadow-md'>
-              Get it on firefox
+              Get it on Firefox
             </button>
           </div>
         </div>

@@ -9,7 +9,7 @@ const Tablist = () => {
   };
 
   return (
-    <nav className='mt-[2.8rem]'>
+    <nav className='mt-[2.6rem]'>
       <ul
         role='tablist'
         aria-label='Features'
@@ -24,7 +24,7 @@ const Tablist = () => {
               aria-controls='panel-1'
               id='tab-1'
               tabIndex={selectedIndexFeature === index ? '1' : '0'}
-              className={`border-b-[1px] border-b-veryDarkBlue pb-[3rem] pt-[2.2rem] text-center  tracking-[0.06rem] ${
+              className={`border-b-[1px] border-b-veryDarkBlue pb-[2.5rem] pt-[2.2rem] text-center  tracking-[0.06rem] ${
                 index === features.length - 1 ? 'px-[7.5rem]' : 'px-[4.5rem]'
               } `}
             >
