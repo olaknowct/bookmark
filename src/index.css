@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply xl:text-[4.7rem] text-[3rem] xs:text-[3.5rem] sm:text-[4rem] font-semibold leading-[5.2rem];
+  }
+
+  h2 {
+    @apply text-[3.4rem] text-veryDarkBlue  tracking-[-0.09rem] font-semibold;
+  }
+}
