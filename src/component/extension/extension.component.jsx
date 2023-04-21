@@ -1,7 +1,7 @@
 const Extension = () => {
   return (
     <section>
-      <div className='flex flex-col gap-[1.8rem] pt-[14.8rem] text-center'>
+      <div className='flex flex-col gap-[1.6rem] pt-[3.3rem] text-center'>
         <h2>Download the extension</h2>
         <p className='section-p-default leading-[2.8rem] tracking-[0.002rem]'>
           We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite
