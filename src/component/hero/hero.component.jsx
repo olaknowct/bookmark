@@ -11,15 +11,13 @@ const Hero = () => {
             and see your sites load instantly. Try it for free
           </p>
           <div className='mt-[3.3rem] flex flex-col justify-center gap-[2rem] xs:flex-row lg:justify-start '>
-            <button className='rounded-lg bg-softBlue px-[2.2rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold tracking-[0.02rem] text-white'>
-              Get it on Chrome
-            </button>
+            <button className='btn-primary'>Get it on Chrome</button>
             <button className='font-inherit rounded-lg  bg-grayishBlue  bg-opacity-10 px-[2rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold text-veryDarkBlue text-opacity-70 shadow-md'>
               Get it on firefox
             </button>
           </div>
         </div>
-        <div className='left-elipse order-1 justify-self-center lg:order-2 lg:justify-self-start'>
+        <div className='left-elipse elipse order-1 justify-self-center lg:order-2 lg:justify-self-start'>
           <img src={heroImg} width={657} height={466} alt='Hero bookmark website' />
         </div>
       </div>

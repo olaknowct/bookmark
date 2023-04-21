@@ -12,6 +12,24 @@
   }
 }
 
+@layer components {
+  .btn-primary {
+    @apply rounded-lg bg-softBlue px-[2.5rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold tracking-[-0.06rem] text-white;
+  }
+}
+
 .left-elipse {
   @apply relative after:absolute after:left-[19.5rem] after:top-[14.4rem] after:-z-10 after:block after:h-[35.2rem] after:w-[1000rem]  after:rounded-full after:bg-softBlue after:content-[''];
+}
+
+.elipse {
+  @apply relative after:absolute after:-z-10 after:block after:h-[35.2rem] after:w-[1000rem]  after:rounded-full after:bg-softBlue after:content-[''];
+}
+
+.left-elipse {
+  @apply after:left-[19.5rem] after:top-[14.4rem];
+}
+
+.right-elipse {
+  @apply after:right-[63rem] after:top-[8.2rem];
 }
