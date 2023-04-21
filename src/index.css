@@ -4,10 +4,14 @@
 
 @layer base {
   h1 {
-    @apply xl:text-[4.7rem] text-[3rem] xs:text-[3.5rem] sm:text-[4rem] font-semibold leading-[5.2rem];
+    @apply text-[3rem] font-semibold leading-[5.2rem] xs:text-[3.5rem] sm:text-[4rem] xl:text-[4.7rem];
   }
 
   h2 {
-    @apply text-[3.4rem] text-veryDarkBlue  tracking-[-0.09rem] font-semibold;
+    @apply text-[3.4rem] font-semibold  tracking-[-0.09rem] text-veryDarkBlue;
   }
+}
+
+.left-elipse {
+  @apply relative after:absolute after:left-[19.5rem] after:top-[14.4rem] after:-z-10 after:block after:h-[35.2rem] after:w-[1000rem]  after:rounded-full after:bg-softBlue after:content-[''];
 }
