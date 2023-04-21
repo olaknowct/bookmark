@@ -22,20 +22,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="after:content-['']  justify-self-center lg:justify-self-start order-1 lg:order-2 after:bg-softBlue after:h-[35.2rem] after:rounded-full after:w-[1000rem] after:block after:absolute lg:after:top-[20rem] after:top-[15rem] after:left-[20rem] lg:after:left-[92.5rem] after:-z-10">
-          <img src={heroImg} width={657} height={466} />
+          <img src={heroImg} width={657} height={466} alt='Hero bookmark website' />
         </div>
       </div>
     </section>
   );
 };
 export default Hero;
-
-// [54.4rem_minmax(61.75rem, 1fr)]
-
-// [54.4rem_61.75rem]
-
-// pl-[5.7rem]
-
-{
-  /* <div className='grid grid-cols-[minmax(0,54.4rem)_minmax(0,65.7rem)] gap-[2.2rem] pt-[5.53rem] max-w-[122.3rem] mx-auto  '> */
-}
