@@ -9,9 +9,9 @@ const Header = () => {
       </a>
       <nav className='hidden md:block'>
         <ul className='flex flex-row flex-row items-center gap-[4.8rem] text-[1.3rem] uppercase tracking-[0.15rem] text-veryDarkBlue'>
-          <li className='-mr-[0.5rem]'>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <li className='hover-li -mr-[0.5rem] '>Features</li>
+          <li className='hover-li '>Pricing</li>
+          <li className='hover-li '>Contact</li>
           <li>
             <button className='btn-secondary'>Login</button>
           </li>

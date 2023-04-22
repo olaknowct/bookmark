@@ -20,6 +20,10 @@
   .btn-secondary {
     @apply rounded-lg border border-softRed bg-softRed px-[3rem] py-[1rem] uppercase tracking-[0.2rem] text-white transition duration-200 hover:bg-white hover:text-black;
   }
+
+  .hover-li {
+    @apply cursor-pointer transition duration-200 hover:text-softRed;
+  }
 }
 
 .left-elipse {

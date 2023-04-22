@@ -13,10 +13,10 @@ const Tablist = () => {
       <ul
         role='tablist'
         aria-label='Features'
-        className='flex flex-row justify-center text-[1.6rem]  opacity-50'
+        className='group flex flex-row justify-center text-[1.6rem] text-veryDarkBlue/50'
       >
         {features.map(({ name }, index) => (
-          <li key={index}>
+          <li key={index} className='hover-li  hover:opacity-100'>
             <button
               onClick={handleTabbable.bind(null, index)}
               role='tab'
@@ -24,9 +24,11 @@ const Tablist = () => {
               aria-controls='panel-1'
               id='tab-1'
               tabIndex={selectedIndexFeature === index ? '1' : '0'}
-              className={`border-b-[1px] border-b-veryDarkBlue pb-[2.5rem] pt-[2.2rem] text-center  tracking-[0.06rem] ${
-                index === features.length - 1 ? 'px-[7.5rem]' : 'px-[4.5rem]'
-              } `}
+              className={`  pb-[2.5rem] pt-[2.2rem] text-center tracking-[0.06rem] ${
+                selectedIndexFeature === index
+                  ? 'border-b-[2px] border-b-softRed text-softRed'
+                  : 'border-b-[1px] border-b-veryDarkBlue/50'
+              } ${index === features.length - 1 ? 'px-[7.5rem]' : 'px-[4.5rem]'} `}
             >
               {name}
             </button>
