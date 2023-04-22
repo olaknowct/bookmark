@@ -1,20 +1,14 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { FaqsContext } from '../../context/faqs.context';
 import { ReactComponent as ArrowDown } from '../../images/icon-arrow.svg';
 
 const Faqs = () => {
-  const { faqs } = useContext(FaqsContext);
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const { faqs, activeIndex, setActiveIndex } = useContext(FaqsContext);
 
-  const toggleAccordion = (index) => {
-    if (activeIndex === index) {
-      return setActiveIndex(-1);
-    }
-
+  const toggleAccordion = (index: number) => {
+    if (activeIndex === index) return setActiveIndex(-1);
     setActiveIndex(index);
   };
-
-  console.log(activeIndex);
 
   return (
     <section>
@@ -35,18 +29,12 @@ const Faqs = () => {
                 <ArrowDown
                   className={`transition duration-500 ${
                     activeIndex === index ? '-rotate-180' : 'rotate-0'
-                  }  `}
+                  }`}
                 />
               </div>
 
               {activeIndex === index && (
-                <div
-                  className={`h-0 max-w-[50rem] p-[2rem] pl-[2rem] text-left opacity-0 transition-all  ${
-                    activeIndex === index
-                      ? 'h-min opacity-100 opacity-100 duration-1000 ease-in'
-                      : ''
-                  }`}
-                >
+                <div className={`max-w-[50rem] p-[2rem] pl-[2rem] text-left `}>
                   <p className='text-[1.6rem] opacity-50'>{A}</p>
                 </div>
               )}

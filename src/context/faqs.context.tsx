@@ -1,4 +1,10 @@
-import { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
+
+export type Faqs = {
+  id: number;
+  Q: string;
+  A: string;
+};
 
 const faqsData = [
   {
@@ -25,14 +31,23 @@ const faqsData = [
   },
 ];
 
-export const FaqsContext = createContext({
+type FaqsContextValue = {
+  faqs: Faqs[];
+  activeIndex: number;
+  setActiveIndex: (index: number) => void;
+};
+
+export const FaqsContext = createContext<FaqsContextValue>({
   faqs: [],
+  activeIndex: 0,
+  setActiveIndex: (index: number): void => {},
 });
 
-export const FaqsProvider = ({ children }) => {
-  const [faqs] = useState(faqsData);
+export const FaqsProvider = ({ children }: { children: React.ReactNode }) => {
+  const [faqs] = useState<Faqs[]>(faqsData);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
-  const value = { faqs };
+  const value = { faqs, activeIndex, setActiveIndex };
 
   return <FaqsContext.Provider value={value}>{children}</FaqsContext.Provider>;
 };
