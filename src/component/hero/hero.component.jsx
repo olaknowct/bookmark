@@ -12,7 +12,7 @@ const Hero = () => {
           </p>
           <div className='mt-[3.3rem] flex flex-col justify-center gap-[2rem] xs:flex-row lg:justify-start '>
             <button className='btn-primary'>Get it on Chrome</button>
-            <button className='font-inherit rounded-lg  bg-grayishBlue  bg-opacity-10 px-[2rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold text-veryDarkBlue text-opacity-70 shadow-md'>
+            <button className='font-inherit rounded-lg border-2 border-black/0 bg-grayishBlue bg-opacity-10 px-[1.6rem]  pb-[1.43rem]  pt-[1.3rem] text-[1.5rem] font-bold text-veryDarkBlue text-opacity-70 shadow-md transition duration-200 hover:border-black/100'>
               Get it on Firefox
             </button>
           </div>
