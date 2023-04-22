@@ -4,7 +4,17 @@ import { ReactComponent as ArrowDown } from '../../images/icon-arrow.svg';
 
 const Faqs = () => {
   const { faqs } = useContext(FaqsContext);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const toggleAccordion = (index) => {
+    if (activeIndex === index) {
+      return setActiveIndex(-1);
+    }
+
+    setActiveIndex(index);
+  };
+
+  console.log(activeIndex);
 
   return (
     <section>
@@ -17,9 +27,16 @@ const Faqs = () => {
         <ul className='mx-auto mt-[4.1rem] w-[54.2rem] text-veryDarkBlue'>
           {faqs.map(({ Q, A }, index) => (
             <li className=' border-b first:border-t'>
-              <div className='flex items-center justify-between pr-[2.4rem]'>
+              <div
+                className='flex cursor-pointer items-center justify-between  pr-[2.4rem]'
+                onClick={toggleAccordion.bind(null, index)}
+              >
                 <h3 className='pb-[1.7rem]  pt-[2rem] text-[2rem] tracking-[-0.1rem]'>{Q}</h3>
-                <ArrowDown className='cursor-pointer' onClick={setActiveIndex.bind(null, index)} />
+                <ArrowDown
+                  className={`transition duration-500 ${
+                    activeIndex === index ? '-rotate-180' : 'rotate-0'
+                  }  `}
+                />
               </div>
 
               {activeIndex === index && (
