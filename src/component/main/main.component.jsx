@@ -1,3 +1,4 @@
+import { FaqsProvider } from '../../context/faqs.context';
 import { FeatureProvider } from '../../context/features.context';
 import Extensions from '../extensions/extensions.component';
 import Faqs from '../faqs/faqs.component';
@@ -12,7 +13,9 @@ const Main = () => {
         <Features />
       </FeatureProvider>
       <Extensions />
-      <Faqs />
+      <FaqsProvider>
+        <Faqs />
+      </FaqsProvider>
     </main>
   );
 };
