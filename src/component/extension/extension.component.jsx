@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Chrome from '../../images/logo-chrome.svg';
 import Firefox from '../../images/logo-firefox.svg';
 import Opera from '../../images/logo-opera.svg';
+import { ReactComponent as BgDots } from '../../images/bg-dots.svg';
 
 const Extension = () => {
   const defaultExtensions = [
@@ -38,7 +39,8 @@ const Extension = () => {
             <img src={img} alt={name} width={102} />
             <h3 className='mt-[2.9rem] text-[2rem] font-bold'>Add to {name}</h3>
             <span className='mt-[0.5rem] text-[1.5rem]'>Minimum version {minVersion}</span>
-            <button className='btn-primary mt-[6.5rem] self-stretch py-[1.25rem] tracking-[-0.05rem]'>
+            <BgDots className='mt-[3.5rem]' />
+            <button className='btn-primary mt-[2.6rem] self-stretch py-[1.25rem] tracking-[-0.05rem]'>
               Add & Install Extension
             </button>
           </div>
