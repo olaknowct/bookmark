@@ -13,9 +13,7 @@ const Header = () => {
           <li>Pricing</li>
           <li>Contact</li>
           <li>
-            <button className='rounded-lg bg-softRed px-[3.2rem] py-[1rem] uppercase tracking-[0.2rem] text-white'>
-              Login
-            </button>
+            <button className='btn-secondary'>Login</button>
           </li>
         </ul>
       </nav>

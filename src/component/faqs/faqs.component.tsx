@@ -12,7 +12,7 @@ const Faqs = () => {
 
   return (
     <section>
-      <div className='mt-[12.3rem] flex flex-col gap-[1.6rem] pt-[3.3rem] text-center'>
+      <div className='flex flex-col gap-[1.6rem] pb-[14.8rem] pt-[15.6rem] text-center'>
         <h2>Frequently Asked Questions</h2>
         <p className='section-p-default leading-[2.8rem] tracking-[0.002rem]'>
           Here are some of our FAQs. If you have any other questions you'd like answered please feel
@@ -40,6 +40,8 @@ const Faqs = () => {
               )}
             </li>
           ))}
+
+          <button className='btn-primary mt-[4.9rem]'>More Info</button>
         </ul>
       </div>
     </section>

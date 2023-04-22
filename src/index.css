@@ -16,6 +16,10 @@
   .btn-primary {
     @apply rounded-lg bg-softBlue px-[2.5rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold tracking-[-0.06rem] text-white;
   }
+
+  .btn-secondary {
+    @apply rounded-lg bg-softRed px-[3.2rem] py-[1rem] uppercase tracking-[0.2rem] text-white;
+  }
 }
 
 .left-elipse {
