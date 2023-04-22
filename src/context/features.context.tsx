@@ -3,6 +3,21 @@ import feature1 from '../images/illustration-features-tab-1.svg';
 import feature2 from '../images/illustration-features-tab-2.svg';
 import feature3 from '../images/illustration-features-tab-3.svg';
 
+type Feature = {
+  id: number;
+  name: string;
+  heading: string;
+  alt: string;
+  description: string;
+  img: string;
+};
+
+type FeaturesContextValue = {
+  features: Feature[];
+  selectedIndexFeature: number;
+  setSelectedIndexFeature: (index: number) => void;
+};
+
 const featuresData = [
   {
     id: 1,
@@ -28,20 +43,21 @@ const featuresData = [
     id: 3,
     name: 'Easy Sharing',
     heading: 'Sharing of bookmarks',
+    alt: 'Sharing of bookmarks',
     description:
       'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.',
     img: feature3,
   },
 ];
 
-export const FeaturesContext = createContext({
+export const FeaturesContext = createContext<FeaturesContextValue>({
   features: [],
   selectedIndexFeature: 0,
   setSelectedIndexFeature: () => {},
 });
 
-export const FeatureProvider = ({ children }) => {
-  const [features] = useState(featuresData);
+export const FeatureProvider = ({ children }: { children: React.ReactNode }) => {
+  const [features] = useState<Feature[]>(featuresData);
   const [selectedIndexFeature, setSelectedIndexFeature] = useState(0);
 
   const value = { features, selectedIndexFeature, setSelectedIndexFeature };
