@@ -46,6 +46,7 @@
   @apply mx-auto max-w-[54rem] text-[1.8rem]  opacity-50;
 }
 
-.soft-red-filter {
+.soft-red-filter,
+.filter:hover {
   filter: invert(51%) sepia(48%) saturate(3215%) hue-rotate(326deg) brightness(97%) contrast(110%);
 }
