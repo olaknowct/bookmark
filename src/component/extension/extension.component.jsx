@@ -29,11 +29,11 @@ const Extension = () => {
   const [extensions] = useState(defaultExtensions);
 
   return (
-    <ul className='mt-[4.3rem] flex flex-row justify-center gap-[3.4rem]'>
+    <ul className='mt-[4.3rem] flex flex-row flex-wrap justify-center gap-[3.4rem]'>
       {extensions.map(({ id, name, minVersion, img }) => (
         <li
           key={id}
-          className=' h-[36rem] w-[28rem] rounded-xl px-[2.4rem] pt-[3.8rem] shadow-xl last:mt-[7.4rem]  last:pr-[1.8rem] [&:nth-child(2)]:mt-[4.12rem] [&:nth-child(2)]:pr-[2.45rem] [&:nth-child(2)]:pt-[4rem] '
+          className='h-[36rem] w-[28rem] rounded-xl px-[2.4rem] pt-[3.8rem] shadow-xl last:pr-[1.8rem]  lg:last:mt-[7.4rem] [&:nth-child(2)]:pr-[2.45rem] [&:nth-child(2)]:pt-[4rem] lg:[&:nth-child(2)]:mt-[4.12rem] '
         >
           <div className='flex flex-col items-center '>
             <img src={img} alt={name} width={102} />

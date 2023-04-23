@@ -13,7 +13,7 @@ const Tablist = () => {
       <ul
         role='tablist'
         aria-label='Features'
-        className='group flex flex-row justify-center text-[1.6rem] text-veryDarkBlue/50'
+        className='group flex flex-col justify-center text-[1.6rem] text-veryDarkBlue/50 md:flex-row'
       >
         {features.map(({ name }, index) => (
           <li key={index} className='hover-li  hover:opacity-100'>

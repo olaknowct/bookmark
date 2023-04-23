@@ -6,11 +6,11 @@ const CallToAction = () => {
         <h2 className='mx-auto mt-[3.2rem] max-w-[45rem] leading-[4.2rem] text-white'>
           Stay up-to-date with what we’re doing
         </h2>
-        <form className='mx-auto mt-[3.5rem] flex max-w-[44rem] justify-center gap-[1.8rem]'>
+        <form className='mx-auto mt-[3.5rem] flex max-w-[44rem] flex-col justify-center gap-[1.8rem] md:flex-row'>
           <input
             type='text'
             placeholder='Enter your email address'
-            className='flex-1 rounded-lg px-[2rem] text-[1.4rem]'
+            className='flex-1 rounded-lg px-[2rem]  px-[2rem] py-[1.4rem] text-[1.4rem]'
           />
           <button className='btn-secondary flex-start px-[2rem] py-[1.4rem] text-[1.2rem] capitalize'>
             Contact Us

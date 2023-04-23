@@ -8,13 +8,13 @@
   }
 
   h2 {
-    @apply text-[3.3rem] font-semibold  tracking-[-0.09rem] text-veryDarkBlue;
+    @apply text-[3rem] font-semibold tracking-[-0.09rem] text-veryDarkBlue  md:text-[3rem] lg:text-[3.3rem];
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply rounded-lg border-2 border-softBlue bg-softBlue px-[2.1rem] pb-[1.43rem] pt-[1.3rem] text-[1.5rem] font-bold tracking-[-0.06rem] text-white transition duration-200 hover:bg-white hover:text-black;
+    @apply rounded-lg border-2 border-softBlue bg-softBlue px-[2.3rem] pb-[1.3rem] pt-[1rem] text-[1.5rem] font-bold tracking-[-0.06rem] text-white transition duration-200 hover:bg-white hover:text-black;
   }
 
   .btn-secondary {
@@ -31,7 +31,7 @@
 }
 
 .elipse {
-  @apply relative after:absolute after:-z-10 after:block after:h-[35.2rem] after:w-[1000rem]  after:rounded-full after:bg-softBlue after:content-[''];
+  @apply relative after:absolute after:-z-10 after:block after:h-[30rem] after:w-[1000rem] after:rounded-full  after:bg-softBlue after:content-[''] md:after:h-[35.2rem];
 }
 
 .left-elipse {
@@ -39,7 +39,7 @@
 }
 
 .right-elipse {
-  @apply after:right-[63rem] after:top-[8.2rem];
+  @apply after:right-[30rem] after:top-[8.2rem] md:after:right-[63rem];
 }
 
 .section-p-default {

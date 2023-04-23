@@ -13,13 +13,13 @@ const Faqs = () => {
 
   return (
     <section>
-      <div className='flex flex-col gap-[1.6rem] pb-[14.8rem] pt-[15.6rem] text-center'>
+      <div className='flex flex-col flex-wrap gap-[1.6rem] px-[5rem] pb-[14.8rem] pt-[15.6rem] text-center'>
         <h2>Frequently Asked Questions</h2>
         <p className='section-p-default leading-[2.8rem] tracking-[0.002rem]'>
           Here are some of our FAQs. If you have any other questions you'd like answered please feel
           free to email us.
         </p>
-        <ul className='group mx-auto mt-[4.1rem] w-[54.2rem] text-veryDarkBlue'>
+        <ul className='group mx-auto mt-[4.1rem] w-[40rem] text-veryDarkBlue md:w-[54.2rem]'>
           {faqs.map(({ Q, A }, index) => (
             <li className='group-hover:hover-li border-b first:border-t'>
               <div
