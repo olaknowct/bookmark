@@ -21,7 +21,7 @@ const Faqs = () => {
         </p>
         <ul className='group mx-auto mt-[4.1rem] w-[40rem] text-veryDarkBlue md:w-[54.2rem]'>
           {faqs.map(({ Q, A }, index) => (
-            <li className='group-hover:hover-li border-b first:border-t'>
+            <li key={index} className='group-hover:hover-li border-b first:border-t'>
               <div
                 className='flex cursor-pointer items-center justify-between  pr-[2.4rem]'
                 onClick={toggleAccordion.bind(null, index)}

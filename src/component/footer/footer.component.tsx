@@ -3,8 +3,6 @@ import FacebookLogo from '../../images/icon-facebook.svg';
 import TwitterLogo from '../../images/icon-twitter.svg';
 
 const Footer = () => {
-  console.log('render footer');
-
   return (
     <footer className='bg-veryDarkBlue text-white'>
       <div className='mx-auto flex max-w-[115.4rem] flex-col items-center gap-[6.5rem]  px-[2.1rem] py-[3.2rem] md:flex-row'>
