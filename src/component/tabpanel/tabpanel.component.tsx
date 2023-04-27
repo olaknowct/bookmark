@@ -11,7 +11,7 @@ const Tabpanel = () => {
           key={index}
           id='panel-1'
           role='tabpanel'
-          tabIndex='0'
+          tabIndex={0}
           aria-labelledby='tab-1'
           hidden={selectedIndexFeature === index ? false : true}
         >

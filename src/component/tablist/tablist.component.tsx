@@ -4,7 +4,7 @@ import { FeaturesContext } from '../../context/features.context';
 const Tablist = () => {
   const { features, setSelectedIndexFeature, selectedIndexFeature } = useContext(FeaturesContext);
 
-  const handleTabbable = (index) => {
+  const handleTabbable = (index: number): void => {
     setSelectedIndexFeature(index);
   };
 
@@ -23,7 +23,7 @@ const Tablist = () => {
               aria-selected={selectedIndexFeature === index ? 'true' : 'false'}
               aria-controls='panel-1'
               id='tab-1'
-              tabIndex={selectedIndexFeature === index ? '1' : '0'}
+              tabIndex={selectedIndexFeature === index ? 1 : 0}
               className={`  pb-[2.5rem] pt-[2.2rem] text-center tracking-[0.06rem] ${
                 selectedIndexFeature === index
                   ? 'border-b-[2px] border-b-softRed text-softRed'

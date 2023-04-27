@@ -4,8 +4,14 @@ import Firefox from '../../images/logo-firefox.svg';
 import Opera from '../../images/logo-opera.svg';
 import { ReactComponent as BgDots } from '../../images/bg-dots.svg';
 
+type ExtensionType = {
+  id: number;
+  name: string;
+  minVersion: number;
+  img: string;
+};
 const Extension = () => {
-  const defaultExtensions = [
+  const defaultExtensions: ExtensionType[] = [
     {
       id: 1,
       name: 'Chrome',

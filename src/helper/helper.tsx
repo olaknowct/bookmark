@@ -1,5 +1,5 @@
 // Validation
-const isValidHttpUrl = (string) => {
+const isValidHttpUrl = (string: string) => {
   let url;
   try {
     url = new URL(string);
@@ -10,7 +10,7 @@ const isValidHttpUrl = (string) => {
   return url.protocol === 'http:' || url.protocol === 'https:';
 };
 
-export const validateLinkInput = (link) => {
+export const validateLinkInput = (link: string) => {
   const defaulErrorMsg = 'Whoops, makesure its an email';
   if (link === '') {
     throw Error(defaulErrorMsg);
