@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Frontend Mentor - Bookmark landing page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the newsletter form is submitted if:
+  - The input field is empty
+  - The email address is not formatted correctly
 
-### `npm run build`
+### Screenshot
+![image](https://user-images.githubusercontent.com/69885800/233856987-29a54be2-6ea3-41fd-a285-5ec1f0d6c261.png)
+![image](https://user-images.githubusercontent.com/69885800/233856996-81f7a88b-0331-4262-bb5a-b93fe17c1742.png)
+![image](https://user-images.githubusercontent.com/69885800/233857009-a455150c-ccf0-4cba-9023-e51d7dcf7139.png)
+![image](https://user-images.githubusercontent.com/69885800/233857017-caf34ab8-fd39-4ca9-b1bd-637e4ab627c3.png)
+![image](https://user-images.githubusercontent.com/69885800/233857025-35f74c70-7a2b-4cde-86c9-378e3459463a.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [Github](https://github.com/olaknowct/bookmark)
+- Live Site URL: [Bookmark](https://bookmark-fmtr.netlify.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://reactjs.org/) - JS library
+- [Tailwind-CSS](https://tailwindcss.com/) - For styles
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Building of Accordion and Tab
+- accessibility for Tabbable (Tab, tablist, tabpane)
+- Tailwind Directives
+- Implementation of pseudo using TW
+- Render svg as img to change fill color
+- listen to viewport width using useEffect
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Useful resources
 
-## Learn More
+- [Accordion and Tablist](https://react.dev/learn/sharing-state-between-components) - Benefits of sharing states and can help you implement accordion and tablist
+- [Aria Tab Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#description) - This helps me build semantic and accessible tab role
+- [TW Directives](https://tailwindcss.com/docs/functions-and-directives) - This is where you can find how to use directives of TW
+- [Viewport width](https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth) - Docs related on viewport width
+- [Changing SVG color](https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element) - Articles that gives you a lof of ideas on changing svg color
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
 
-### Code Splitting
+- Frontend Mentor - [@olaknowct](https://www.frontendmentor.io/profile/olaknowct)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
